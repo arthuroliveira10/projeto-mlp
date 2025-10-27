@@ -2,11 +2,11 @@
 
 Este projeto implementa uma **Multi-Layer Perceptron (MLP)** para resolver o problema do XOR usando backpropagation.
 
-## 📋 Descrição
+#  Descrição
 
 O problema XOR (OU Exclusivo) é um problema clássico que demonstra a importância de camadas ocultas em redes neurais. Uma rede neural de camada única não consegue resolver o XOR, mas com uma camada oculta é possível.
 
-## 🔧 Funcionamento do Algoritmo
+#  Funcionamento do Algoritmo
 
 ### Arquitetura da Rede
 - **Camada de entrada**: 2 neurônios (x1 e x2)
@@ -58,7 +58,7 @@ A função sigmoid é usada para:
 - Garantir que as saídas fiquem entre 0 e 1
 - Permitir a derivação necessária para o backpropagation
 
-## 📊 Tabela XOR
+#  Tabela XOR
 
 | Entrada | Saída Esperada |
 |---------|----------------|
@@ -67,7 +67,7 @@ A função sigmoid é usada para:
 | [1, 0]  | 1              |
 | [1, 1]  | 0              |
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 - Python 3.x
@@ -92,25 +92,25 @@ Resultados:
 [1, 1] -> 0
 ```
 
-## ⚙️ Parâmetros
+# Parâmetros
 
 - **Taxa de Aprendizado (alpha)**: 0.05
 - **Número de Épocas**: 50.000
 - **Inicialização dos Pesos**: Valores aleatórios entre -1 e 1
 - **Função de Ativação**: Sigmoid em todas as camadas
 
-## 📚 Conceitos Utilizados
+#  Conceitos Utilizados
 
 1. **Forward Propagation**: Propagação dos sinais da entrada até a saída
 2. **Backward Propagation**: Propagação do erro da saída até a entrada
 3. **Gradient Descent**: Atualização dos pesos minimizando o erro
 4. **Derivada da Sigmoid**: `s'(x) = s(x) * (1 - s(x))`
 
-## 🎯 Por que XOR é Importante?
+#  Por que XOR é Importante?
 
 O XOR é um problema não-linear que não pode ser resolvido por um perceptron de camada única. Este problema foi fundamental no desenvolvimento das redes neurais multicamadas e do algoritmo backpropagation, demonstrando a necessidade de camadas ocultas para resolver problemas complexos.
 
-## 📝 Estrutura do Código
+#  Estrutura do Código
 
 ```python
 class MLP:
@@ -118,7 +118,7 @@ class MLP:
     - predict(): Faz predições após o treinamento
 ```
 
-## 📈 Resultados
+#  Resultados
 
 A rede aprende corretamente a função XOR após 50.000 épocas de treinamento, demonstrando a capacidade de uma MLP com camadas ocultas de resolver problemas não-linearmente separáveis.
 
